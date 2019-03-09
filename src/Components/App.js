@@ -10,10 +10,11 @@ function App() {
   return (
     <Router>
       <div className="app-wrapper">
-        <Route path='/' exact component={Home}/>
+        {/* <Route path='/' exact component={Home}/>
         <Route path='/login' exact component={Form} />
         <Route path='/account-recovery' exact component={Form}/>
-        <Route path='/signup' exact component={Form} />
+        <Route path='/signup' exact component={Form} /> */}
+        <Home />
       </div>
     </Router>
   );
