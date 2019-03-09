@@ -3,7 +3,8 @@ import TopNav from './TopNav';
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-function Home() {
+function Home({match}) {
+  console.log(match);
   return (
     <div className='main'>
       <TopNav/>
