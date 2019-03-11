@@ -67,9 +67,9 @@ class LoginForm extends Component {
             <button className="login-form__login-btn">Login</button>
           </div>
         </form>
-        <Link className="login-form__link login-form__lost-password" to='/account-recovery'>Lost your password?</Link>
-        <Link className="login-form__link login-form__signup-btn" to='/signup'>Don't have a account? Sign up</Link>
-        <Link className="login-form__link" to='/'><FontAwesomeIcon icon='arrow-left' />{' '}Back to uiCookies</Link>
+        <Link className="login-form__link login-form__lost-password" to='/react-app-homepage/account-recovery'>Lost your password?</Link>
+        <Link className="login-form__link login-form__signup-btn" to='/react-app-homepage/signup'>Don't have a account? Sign up</Link>
+        <Link className="login-form__link" to='/react-app-homepage'><FontAwesomeIcon icon='arrow-left' />{' '}Back to uiCookies</Link>
       </Fragment>
     );
   }

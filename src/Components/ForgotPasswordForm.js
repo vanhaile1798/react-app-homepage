@@ -43,7 +43,7 @@ class ForgotPasswordForm extends Component {
             <button className="account-recovery-form__submit-btn">Submit</button>
           </div>
         </form>
-        <Link className="account-recovery-form__link" to='/login'><FontAwesomeIcon icon='arrow-left' />{' '}Back to Login</Link>
+        <Link className="account-recovery-form__link" to='/react-app-homepage/login'><FontAwesomeIcon icon='arrow-left' />{' '}Back to Login</Link>
       </Fragment>
     );
   }

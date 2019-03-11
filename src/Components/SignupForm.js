@@ -73,8 +73,8 @@ class SignupForm extends Component {
             <button className="signup-form__login-btn">Sign up</button>
           </div>
         </form>
-        <Link className="login-form__link" to='/login'><FontAwesomeIcon icon='arrow-left' />{' '}Back to Login</Link>
-        <Link className="login-form__link" to='/'><FontAwesomeIcon icon='arrow-left' />{' '}Back to uiCookies</Link>
+        <Link className="login-form__link" to='/react-app-homepage/login'><FontAwesomeIcon icon='arrow-left' />{' '}Back to Login</Link>
+        <Link className="login-form__link" to='/react-app-homepage'><FontAwesomeIcon icon='arrow-left' />{' '}Back to uiCookies</Link>
       </Fragment>
     );
   }

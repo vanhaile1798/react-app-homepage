@@ -2,19 +2,13 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import './styles/styles.scss';
-
-import Form from './Form';
-import Home from "./Home";
+import RouteWrapper from './RouteWrapper';
 
 function App() {
   return (
     <Router>
       <div className="app-wrapper">
-        <Route path='/' component={Home}/>
-        <Route path='/login' exact component={Form} />
-        <Route path='/account-recovery' exact component={Form}/>
-        <Route path='/signup' exact component={Form} />
-        {/* <Home /> */}
+        <Route path='/react-app-homepage' component={RouteWrapper} />
       </div>
     </Router>
   );
