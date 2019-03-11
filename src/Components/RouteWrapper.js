@@ -8,7 +8,7 @@ function RouteWrapper({match}) {
   console.log(match);
   return(
     <Fragment>
-      <Route path={`${match.path}/`} exact component={Home} />
+      <Route path={`${match.path}/`} exact render={(props) => <Home {...props} path={match.path} />} />
       <Route path={`${match.path}/login`} render={(props) => <Form {...props} path={match.path} />} />
       <Route path={`${match.path}/account-recovery`} render={(props) => <Form {...props} path={match.path} />}/>
       <Route path={`${match.path}/signup`} render={(props) => <Form {...props} path={match.path} />} />

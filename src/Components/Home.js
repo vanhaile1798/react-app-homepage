@@ -3,7 +3,7 @@ import TopNav from './TopNav';
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-function Home({match}) {
+function Home({path}) {
   return (
     <div className='main'>
       <TopNav/>
@@ -13,8 +13,8 @@ function Home({match}) {
           <div className='main__content'>
             <h2 className='main__title'>We Change Everything Wordpress</h2>
             <p className='main__content-description'>This is the only Wordpress theme you will ever want to use.</p>
-            <Link className='main__content-link main__login-btn' to={`${match.path}/login`}>Log in</Link>
-            <Link className='main__content-link main__signup-btn' to={`${match.path}/signup`}>Sign up</Link>
+            <Link className='main__content-link main__login-btn' to={`${path}/login`}>Log in</Link>
+            <Link className='main__content-link main__signup-btn' to={`${path}/signup`}>Sign up</Link>
           </div>
         </div>
       </div>
